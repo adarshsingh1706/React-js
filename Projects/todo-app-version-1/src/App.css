@@ -1,0 +1,19 @@
+body .todo-container h1 {
+  font-weight: 700;
+  font-size: 30px;
+  margin: 15px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+}
+
+.myrow {
+  margin: 12px 5px;
+}
+
+.add-btn {
+  margin-left: 120px;
+  margin-bottom: 10px;
+}
