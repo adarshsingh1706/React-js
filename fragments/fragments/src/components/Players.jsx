@@ -1,10 +1,14 @@
 import Item from "./item";
 
-const Players = (props) => {
+const Players = ({ bestcricketplayers }) => {
   return (
     <ul className="list-group">
-      {props.bestcricketplayers.map((items) => (
-        <Item key={items} bestcricketplayers={items}></Item>
+      {bestcricketplayers.map((items) => (
+        <Item
+          key={items}
+          bestcricketplayers={items}
+          handleVoteButton={() => console.log(`${items} voted`)}
+        ></Item>
 
         // key
       ))}
