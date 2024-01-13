@@ -22,6 +22,8 @@ function App() {
     "James Anderson",
     "Dale Steyn",
   ];
+
+  let textToShow = "Player Name entered by the user";
   const handleOnChange = (event) => {
     console.log(event.target.value);
   };
@@ -32,7 +34,9 @@ function App() {
         <h1>
           <center>Best Cricket Players</center>
         </h1>
+
         <FoodInput handleOnChange={handleOnChange}></FoodInput>
+        <p>{textToShow}</p>
         <ErrorMsg name={bestcricketplayers}></ErrorMsg>
         <Players bestcricketplayers={bestcricketplayers}></Players>
       </Container>
