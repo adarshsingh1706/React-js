@@ -1,0 +1,42 @@
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(237, 237, 237);
+}
+
+.button {
+  height: 45px;
+  width: 45px;
+  margin: 18px;
+  background-color: #5f6368;
+  border: none;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.button.equal {
+  background-color: rgb(47, 114, 220);
+}
+
+.button.operator {
+  background-color: #f57c00;
+  color: #fff;
+}
+
+.button.number {
+  color: rgb(204, 204, 204);
+}
+
+.button:hover {
+  transform: scale(1.15);
+}
+
+.button.clear {
+  background-color: rgb(47, 114, 220);
+}
+
+.button.del {
+  background-color: rgb(47, 114, 220);
+}
