@@ -7,6 +7,7 @@ const Players = ({ bestcricketplayers }) => {
         <Item
           key={items}
           bestcricketplayers={items}
+          voted={true}
           handleVoteButton={() => console.log(`${items} voted`)}
         ></Item>
 

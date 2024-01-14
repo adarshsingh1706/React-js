@@ -1,12 +1,12 @@
 import styles from "./FoodInput.module.css";
 
-function FoodInput({ handleOnChange }) {
+function FoodInput({ handleKeyDown }) {
   return (
     <input
       type="text"
       placeholder="Search Players Name here"
       className={styles.foodinput}
-      onChange={handleOnChange} // console se
+      onKeyDown={handleKeyDown} // console se
     ></input>
   );
 }

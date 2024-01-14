@@ -2,10 +2,10 @@ import styles from "./ItemStyles.module.css";
 
 //with destructuring
 
-const Item = ({ bestcricketplayers, handleVoteButton }) => {
+const Item = ({ bestcricketplayers, voted, handleVoteButton }) => {
   return (
     <>
-      <li className="list-group-item">
+      <li className={`list-group-item ${voted && "active"}`}>
         {bestcricketplayers}{" "}
         <button className={styles.button} onClick={handleVoteButton}>
           Vote
