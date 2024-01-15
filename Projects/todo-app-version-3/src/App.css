@@ -1,0 +1,27 @@
+input {
+  width: 100%;
+}
+
+.myrow {
+  margin: 12px 5px;
+}
+
+.add-btn {
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+
+body {
+  background-image: url(./assets/todo.jpg);
+  background-size: cover;
+  z-index: auto;
+}
+
+.item-container {
+  color: rgb(23, 24, 24);
+  font-size: 20px;
+  font-weight: 700;
+}
+.deletebtn {
+  margin-right: 18px;
+}

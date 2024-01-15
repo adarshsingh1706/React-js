@@ -1,0 +1,11 @@
+.todoHeading {
+  font-weight: 700;
+  font-size: 30px;
+
+  /* margin: 15px; */
+
+  margin-bottom: 20px;
+  /* background-color: black; */
+  color: black;
+  padding: 15px;
+}
