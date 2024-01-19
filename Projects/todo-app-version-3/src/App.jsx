@@ -18,8 +18,10 @@ function App() {
     ];
     setTodoItems(newTodoItems);
   };
+  
+  // delete button functionality
 
-  const handleDeleteItem = (todoItemName) => {
+  const handleDeleteItem = (todoItemName) => {    
     const newTodoItem = todoItems.filter((item) => item.name !== todoItemName);
     setTodoItems(newTodoItem);
     console.log(`item deleted: ${todoItemName}`);
