@@ -19,13 +19,14 @@ function App() {
   return (
     <>
       <h1>Counter to understand about hooks</h1>
-      <h3>hooks are used to paint the UI or for UI updation</h3>
+      <h3>use effect hooks are used to paint the UI or for UI updation</h3>
       <h2>Counter Value: {Counter}</h2>
 
       <button onClick={AddValue}>Increment Value</button>
 
       <br />
       <br />
+
       <button onClick={decreaseValue}>decrement Value</button>
       {Counter <= 0 && (
         <p>Currently at Minimum Value, press increment to start Counting.</p>
