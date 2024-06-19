@@ -4,13 +4,13 @@ function App() {
   const [length, setLength] = useState(8); //for len of pass
   const [nosAllowed, setNosAllowed] = useState(false); //if nos are allowed or not
   const [charAllowed, setCharAllowed] = useState(false); // if char are allowed or not
-  const [password, setpassword] = useState("");
+  const [password, setpassword] = useState(""); // to reset the pass
 
   //use ref hook
   const passwordRef = useRef(null);
 
   const passwordGenerator = useCallback(() => {
-    //(fn,[dependencies]
+    //(fn,[dependencies], using callback hook for re rendering whenever dependencies change
     let pass = "";
     let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
     if (nosAllowed) str += "0123456789";
@@ -23,16 +23,16 @@ function App() {
       pass += str.charAt(Char);
       setpassword(pass);
     }
-  }, [length, nosAllowed, charAllowed]);
+  }, [length, nosAllowed, charAllowed]); // for optimization
 
   const copyPasswordToClipBoard = useCallback(() => {
-    passwordRef.current?.select();
+    passwordRef.current?.select(); // for showing selected text
     window.navigator.clipboard.writeText(password);
   }, [password]);
 
   useEffect(() => {
     passwordGenerator();
-  }, [length, nosAllowed, charAllowed, passwordGenerator]);
+  }, [length, nosAllowed, charAllowed, passwordGenerator]); // inme koi bhi change ho tho dobara se run krdo with use effect hook
 
   return (
     <>
